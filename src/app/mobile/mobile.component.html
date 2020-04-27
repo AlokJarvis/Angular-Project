@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="input-group">
+        <table>
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <input type="text" name="id" id="id" #id class="input-control"/>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name" #name class="input-control"/></td>
+            </tr>
+            <tr>
+                <td><label for="salary">Salary:</label></td>
+                <td><input type="text" name="salary" id="salary" #salary class="input-control"/></td>
+            </tr>
+            <tr>
+                <td><label for="depart">Department:</label></td>
+                <td><input type="text" name="depart" id="depart" #depart class="input-control"/></td>
+            </tr>
+            <tr>
+                <td><button type="button" name="b" (click)="save(id,name,salary,depart)" ng-click="ShowAlert()" value="save">Add Employee</button></td>
+            </tr>
+        </table>
+    </div>
+        
+        
+    </div>
+</div>
+<p>{{id.value}} {{name.value}} {{salary.value}} {{depart.value}}</p>
+<p>
+    
+</p>

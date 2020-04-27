@@ -1,0 +1,23 @@
+<div class="container">
+    
+        <div class="col-lg-12">
+           <table class="table table-bordered">
+               <thead>
+                <tr>
+                    <th> <a href="#" (click)="sortNum('id')">ID</a></th>
+                    <th> <a href="#" (click)="sortString('id')">Name</a></th>
+                    <th> <a href="#" (click)="sortNum('id')">Salary</a></th>
+                    <th> <a href="#" (click)="sortString('id')">Department</a></th>
+                    
+                </tr>
+                </thead>
+                <tr *ngFor="let emp of employee">
+                    <td>{{emp.id}}</td>
+                    <td>{{emp.name}}</td>
+                    <td>{{emp.salary}}</td>
+                    <td>{{emp.department}}</td>
+                </tr>
+            </table>
+        </div>
+  
+</div>
